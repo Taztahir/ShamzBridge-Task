@@ -76,7 +76,7 @@ export default function PostDetails() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-4xl md:text-5xl font-bold mb-4 text-white"
+          className="text-3xl md:text-5xl font-bold mb-4 text-white"
         >
           {post.title}
         </motion.h1>
