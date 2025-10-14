@@ -99,16 +99,16 @@ export default function PostDetails() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="text-gray-200 leading-relaxed text-lg tracking-wide"
+          className="text-gray-100 leading-relaxed text-lg tracking-wide"
         >
           {post.body}
         </motion.p>
 
         <div className="mt-10 border-t border-white/20 pt-6 flex justify-between items-center">
-          <p className="text-gray-400 text-sm">© 2025 Taz Blog</p>
+          <p className="text-gray-300 text-sm">© 2025 Blog</p>
           <Link
             to="/"
-            className="text-blue-300 hover:text-blue-400 transition text-sm"
+            className="text-blue-400 hover:text-blue-400 transition text-sm"
           >
             More Articles →
           </Link>
