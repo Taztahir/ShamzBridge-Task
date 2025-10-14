@@ -27,7 +27,7 @@ export default function ScrollUpButton() {
           exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.3 }}
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 animate-bounce bg-white hover:bg-blue-400 hover:text-white text-blue-500 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none"
+          className="fixed bottom-6 right-6 animate-bounce bg-white hover:bg-orange-400 hover:text-white text-orange-500 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none"
         >
           <ArrowUp size={22} />
         </motion.button>

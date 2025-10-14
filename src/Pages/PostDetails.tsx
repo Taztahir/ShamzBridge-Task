@@ -44,7 +44,7 @@ export default function PostDetails() {
 
   if (loading)
     return (
-      <div className="flex items-center justify-center h-screen bg-gradient-to-r from-blue-600 to-purple-600">
+      <div className="flex items-center justify-center h-screen ">
         <p className="text-white text-xl animate-pulse">Loading article...</p>
       </div>
     );
@@ -57,9 +57,7 @@ export default function PostDetails() {
     );
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16 px-6">
-      {/* Background Glow */}
-      <div className="absolute inset-0 " />
+    <div className="relative min-h-screen text-white py-16 px-6">
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -69,7 +67,7 @@ export default function PostDetails() {
       >
         <Link
           to="/"
-          className="inline-flex items-center text-blue-100 hover:text-blue-400 transition mb-4"
+          className="inline-flex items-center text-white transition mb-4"
         >
           ← Back to Home
         </Link>
@@ -78,7 +76,7 @@ export default function PostDetails() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-300 via-purple-300 to-pink-300 bg-clip-text text-transparent"
+          className="text-4xl md:text-5xl font-bold mb-4 text-white"
         >
           {post.title}
         </motion.h1>
@@ -88,10 +86,10 @@ export default function PostDetails() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="text-sm text-gray-300 mb-8"
+            className="text-sm text-gray-100 mb-8"
           >
             Written by{" "}
-            <span className="font-semibold text-blue-200">{author.name}</span>
+            <span className="font-semibold text-orange-200">{author.name}</span>
           </motion.p>
         )}
 
@@ -108,7 +106,7 @@ export default function PostDetails() {
           <p className="text-gray-300 text-sm">© 2025 Blog</p>
           <Link
             to="/"
-            className="text-blue-400 hover:text-blue-400 transition text-sm"
+            className="text-orange-200 hover:text-blue-100 transition text-sm"
           >
             More Articles →
           </Link>
