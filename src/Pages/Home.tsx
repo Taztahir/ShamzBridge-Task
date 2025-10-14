@@ -37,7 +37,7 @@ export default function Home() {
 
   if (loading)
     return (
-      <div className="flex justify-center items-center h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+      <div className="flex justify-center items-center ">
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 1.5, ease: "linear" }}
@@ -60,7 +60,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Discover Inspiring Blog Posts ✨
+          Discover Inspiring Blog Posts 
         </motion.h1>
 
         {/* Search Bar */}
@@ -128,6 +128,9 @@ export default function Home() {
           </div>
         )}
       </div>
+      <footer className="text-center">
+        <h1 className="py-5 text-orange-200">Designed By TazTahir</h1>
+      </footer>
     </div>
   );
 }

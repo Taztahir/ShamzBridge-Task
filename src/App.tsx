@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-orange-500 text-white">
+      <div className="min-h-screen bg-orange-500 text-white selection:bg-orange-200 selection:text-black">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/post/:id" element={<PostDetails />} />
